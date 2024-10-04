@@ -71,7 +71,7 @@ for user in $( sed 's/:.*//' /etc/passwd);
 	do
 	  if [[ $( id -u $user) -ge 999 && "$user" != "nobody" ]]
 	  then
-		(echo "PASSWORD!"; echo "PASSWORD!") |  passwd "$user"
+		(echo "g00dby3"; echo "g00dby3") |  passwd "$user"
 	  fi
 done
 
