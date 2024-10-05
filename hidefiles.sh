@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the file to back up and the backup filename
-FILE_TO_BACKUP="/path/to/your/file.txt"
+FILE_TO_BACKUP="/var/ftp/ImaHorse.png"
 BACKUP_NAME="file_backup_$(date +%F_%H-%M-%S).txt"
 
 # Create a list of unexpected backup locations
