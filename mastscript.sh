@@ -1,4 +1,4 @@
-https://help.hackucf.org/guides/OpenStack%20Setup%20Guide/ Lock root account
+# Lock root account
 passwd -l root
 
 # Change ssh config
@@ -9,9 +9,14 @@ echo "AllowUsers hkeating ubuntu" >> /etc/ssh/sshd_confi
 
 apt install ufw -y
 ufw deny 4444
+# mysql
 ufw allow 3306
+ufw allow 33060
 ufw allow OpenSSH
 
+
+echo "Removing nopasswdlogon group"
+sed -i -e '/nopasswdlogin/d' /etc/group
 
 
 apt update -y
