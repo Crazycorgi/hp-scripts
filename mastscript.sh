@@ -9,7 +9,9 @@ echo "AllowUsers hkeating ubuntu" >> /etc/ssh/sshd_confi
 
 apt install ufw -y
 ufw deny 4444
+# mysql
 ufw allow 3306
+ufw allow 33060
 ufw allow OpenSSH
 
 
