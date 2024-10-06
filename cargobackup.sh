@@ -12,7 +12,7 @@ TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 BIN_BACKUP="$LOCAL_BACKUP_DIR/bin_backup_$TIMESTAMP.tar.gz"
 HOME_BACKUP="$LOCAL_BACKUP_DIR/home_backup_$TIMESTAMP.tar.gz"
 REMOTE_USER="plinktern"  # Replace with your remote server username
-REMOTE_HOST="your.server.com"  # Replace with your remote server address
+REMOTE_HOST="172.16.4.5"  # Replace with your remote server address
 REMOTE_DIR="$1"  # Use the first argument as the remote backup directory
 
 # Create the local backup directory if it doesn't exist
