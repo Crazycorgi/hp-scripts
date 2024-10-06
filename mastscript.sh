@@ -1,4 +1,4 @@
-https://help.hackucf.org/guides/OpenStack%20Setup%20Guide/ Lock root account
+# Lock root account
 passwd -l root
 
 # Change ssh config
@@ -14,6 +14,9 @@ ufw allow 3306
 ufw allow 33060
 ufw allow OpenSSH
 
+
+echo "Removing nopasswdlogon group"
+sed -i -e '/nopasswdlogin/d' /etc/group
 
 
 apt update -y
